@@ -38,4 +38,33 @@ have positive association of each other and such association can provide positiv
 coefficient; and If the trend of a variable is positive and almost negative to another variable,
 there may be possibility to have negative association of each other and such association can
 result in negative correlation coefficient.Here have 2 correlated features out of 6 features.The
-coorelated features are Confirmed, Death
+coorelated features are Confirmed, Death.
+
+
+**Algorithm**
+Input: COVID 19 Dataset
+Output: Graph representing test and predicted values
+Prerequisites: Import required libraries
+split() : split given array in two parts
+N : LSTM Network
+E : Number of epochs
+Batch-size : N
+D ← read(data)
+traindata, testdata ← split(D)
+K ← G(traindata)
+L ← G(testdata )
+LSTM
+Initialize layers,input shape, optimizer and loss function to define N.
+for k = 1 to E do
+Train(N, K);
+end for
+P ← predictions(N, L)
+Graph(testdata , P)
+Bidirectional LSTM
+Initialize layers,input shape, optimizer and loss function to define N.
+for k = 1 to E do
+Train(N, K);
+end for
+P ← predictions(N, L)
+Graph(testdata , P)
+
